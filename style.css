@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset */
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    margin-top:2rem;
+}
+main{
+    box-shadow: -2px 2px 10px rgb(216, 216, 216);
+    height:30rem;
+}
+.first-box img{
+    width:100%;
+    border-radius:2px;
+}
+.first-box{
+    box-sizing: border-box;
+    height:65%;
+    width:400px;
+    border-radius:2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom:2px solid rgb(207, 207, 207);
+}
+.first-box p{
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom:0.8rem;
+    margin-left:1rem;
+}
+.second-box{
+    box-sizing: border-box;
+    height:27%;
+    border-radius:2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:1rem;
+}
+.second-box span{
+    font-weight: bold;
+    font-size:2rem;
+}
+.second-box p{
+    font-weight: bold;
+}
+.second-box h2+p{
+    font-weight: normal;
+    font-size:0.8rem;
+}
+.second-box select{
+    border-radius:20px;
+    width:2.3rem;
+    text-align: center;
+    outline: none;
+    color:rgb(105, 105, 105);
+}
+.second-box select:hover{
+    cursor:pointer;
+}
+.buttons{
+    height:8%;
+    display:flex;
+}
+.buttons button{
+    width:100%;
+    color:white;
+    border:none;
+    border-radius:2px;
+    transition: all 150ms ease-in-out;
+}
+.buttons button:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 5px rgb(27, 27, 27);
+}
+#plOnePoint{
+    background-color:rgb(39, 192, 133);
+
+}
+#plTwoPoint{
+    background-color:rgb(90, 132, 248);
+
+}
+#reset{
+    background-color:rgb(240, 80, 74);
+}
+.buttons.disabled button:hover{
+    cursor:not-allowed;
+    box-shadow: none;
+}
+#reset:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 5px rgb(27, 27, 27);
+}
+.disabled #plOnePoint{
+    background-color:rgb(104, 199, 163);
+}
+.disabled #plTwoPoint{
+    background-color:rgb(149, 178, 255);
+}
+
